@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		91C67A1220D99D1C00C5BCFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C67A1120D99D1C00C5BCFD /* AppDelegate.swift */; };
+		91C67A1420D99D1C00C5BCFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C67A1320D99D1C00C5BCFD /* ViewController.swift */; };
+		91C67A1720D99D1C00C5BCFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91C67A1520D99D1C00C5BCFD /* Main.storyboard */; };
+		91C67A1920D99D1E00C5BCFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91C67A1820D99D1E00C5BCFD /* Assets.xcassets */; };
+		91C67A1C20D99D1E00C5BCFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91C67A1A20D99D1E00C5BCFD /* LaunchScreen.storyboard */; };
+		91C67A2720D99D1E00C5BCFD /* SecureMatrixAutoLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C67A2620D99D1E00C5BCFD /* SecureMatrixAutoLoginTests.swift */; };
+		91C67A3220D99D1E00C5BCFD /* SecureMatrixAutoLoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C67A3120D99D1E00C5BCFD /* SecureMatrixAutoLoginUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		91C67A2320D99D1E00C5BCFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91C67A0620D99D1C00C5BCFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91C67A0D20D99D1C00C5BCFD;
+			remoteInfo = SecureMatrixAutoLogin;
+		};
+		91C67A2E20D99D1E00C5BCFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91C67A0620D99D1C00C5BCFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91C67A0D20D99D1C00C5BCFD;
+			remoteInfo = SecureMatrixAutoLogin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		91C67A0E20D99D1C00C5BCFD /* SecureMatrixAutoLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureMatrixAutoLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		91C67A1120D99D1C00C5BCFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		91C67A1320D99D1C00C5BCFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		91C67A1620D99D1C00C5BCFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		91C67A1820D99D1E00C5BCFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		91C67A1B20D99D1E00C5BCFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		91C67A1D20D99D1E00C5BCFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91C67A2220D99D1E00C5BCFD /* SecureMatrixAutoLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecureMatrixAutoLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91C67A2620D99D1E00C5BCFD /* SecureMatrixAutoLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureMatrixAutoLoginTests.swift; sourceTree = "<group>"; };
+		91C67A2820D99D1E00C5BCFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91C67A2D20D99D1E00C5BCFD /* SecureMatrixAutoLoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecureMatrixAutoLoginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91C67A3120D99D1E00C5BCFD /* SecureMatrixAutoLoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureMatrixAutoLoginUITests.swift; sourceTree = "<group>"; };
+		91C67A3320D99D1E00C5BCFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91C67A0B20D99D1C00C5BCFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91C67A1F20D99D1E00C5BCFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91C67A2A20D99D1E00C5BCFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		91C67A0520D99D1C00C5BCFD = {
+			isa = PBXGroup;
+			children = (
+				91C67A1020D99D1C00C5BCFD /* SecureMatrixAutoLogin */,
+				91C67A2520D99D1E00C5BCFD /* SecureMatrixAutoLoginTests */,
+				91C67A3020D99D1E00C5BCFD /* SecureMatrixAutoLoginUITests */,
+				91C67A0F20D99D1C00C5BCFD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		91C67A0F20D99D1C00C5BCFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91C67A0E20D99D1C00C5BCFD /* SecureMatrixAutoLogin.app */,
+				91C67A2220D99D1E00C5BCFD /* SecureMatrixAutoLoginTests.xctest */,
+				91C67A2D20D99D1E00C5BCFD /* SecureMatrixAutoLoginUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91C67A1020D99D1C00C5BCFD /* SecureMatrixAutoLogin */ = {
+			isa = PBXGroup;
+			children = (
+				91C67A1120D99D1C00C5BCFD /* AppDelegate.swift */,
+				91C67A1320D99D1C00C5BCFD /* ViewController.swift */,
+				91C67A1520D99D1C00C5BCFD /* Main.storyboard */,
+				91C67A1820D99D1E00C5BCFD /* Assets.xcassets */,
+				91C67A1A20D99D1E00C5BCFD /* LaunchScreen.storyboard */,
+				91C67A1D20D99D1E00C5BCFD /* Info.plist */,
+			);
+			path = SecureMatrixAutoLogin;
+			sourceTree = "<group>";
+		};
+		91C67A2520D99D1E00C5BCFD /* SecureMatrixAutoLoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				91C67A2620D99D1E00C5BCFD /* SecureMatrixAutoLoginTests.swift */,
+				91C67A2820D99D1E00C5BCFD /* Info.plist */,
+			);
+			path = SecureMatrixAutoLoginTests;
+			sourceTree = "<group>";
+		};
+		91C67A3020D99D1E00C5BCFD /* SecureMatrixAutoLoginUITests */ = {
+			isa = PBXGroup;
+			children = (
+				91C67A3120D99D1E00C5BCFD /* SecureMatrixAutoLoginUITests.swift */,
+				91C67A3320D99D1E00C5BCFD /* Info.plist */,
+			);
+			path = SecureMatrixAutoLoginUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91C67A0D20D99D1C00C5BCFD /* SecureMatrixAutoLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91C67A3620D99D1E00C5BCFD /* Build configuration list for PBXNativeTarget "SecureMatrixAutoLogin" */;
+			buildPhases = (
+				91C67A0A20D99D1C00C5BCFD /* Sources */,
+				91C67A0B20D99D1C00C5BCFD /* Frameworks */,
+				91C67A0C20D99D1C00C5BCFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SecureMatrixAutoLogin;
+			productName = SecureMatrixAutoLogin;
+			productReference = 91C67A0E20D99D1C00C5BCFD /* SecureMatrixAutoLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		91C67A2120D99D1E00C5BCFD /* SecureMatrixAutoLoginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91C67A3920D99D1E00C5BCFD /* Build configuration list for PBXNativeTarget "SecureMatrixAutoLoginTests" */;
+			buildPhases = (
+				91C67A1E20D99D1E00C5BCFD /* Sources */,
+				91C67A1F20D99D1E00C5BCFD /* Frameworks */,
+				91C67A2020D99D1E00C5BCFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91C67A2420D99D1E00C5BCFD /* PBXTargetDependency */,
+			);
+			name = SecureMatrixAutoLoginTests;
+			productName = SecureMatrixAutoLoginTests;
+			productReference = 91C67A2220D99D1E00C5BCFD /* SecureMatrixAutoLoginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		91C67A2C20D99D1E00C5BCFD /* SecureMatrixAutoLoginUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91C67A3C20D99D1E00C5BCFD /* Build configuration list for PBXNativeTarget "SecureMatrixAutoLoginUITests" */;
+			buildPhases = (
+				91C67A2920D99D1E00C5BCFD /* Sources */,
+				91C67A2A20D99D1E00C5BCFD /* Frameworks */,
+				91C67A2B20D99D1E00C5BCFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91C67A2F20D99D1E00C5BCFD /* PBXTargetDependency */,
+			);
+			name = SecureMatrixAutoLoginUITests;
+			productName = SecureMatrixAutoLoginUITests;
+			productReference = 91C67A2D20D99D1E00C5BCFD /* SecureMatrixAutoLoginUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91C67A0620D99D1C00C5BCFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = mox;
+				TargetAttributes = {
+					91C67A0D20D99D1C00C5BCFD = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					91C67A2120D99D1E00C5BCFD = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 91C67A0D20D99D1C00C5BCFD;
+					};
+					91C67A2C20D99D1E00C5BCFD = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 91C67A0D20D99D1C00C5BCFD;
+					};
+				};
+			};
+			buildConfigurationList = 91C67A0920D99D1C00C5BCFD /* Build configuration list for PBXProject "SecureMatrixAutoLogin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 91C67A0520D99D1C00C5BCFD;
+			productRefGroup = 91C67A0F20D99D1C00C5BCFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91C67A0D20D99D1C00C5BCFD /* SecureMatrixAutoLogin */,
+				91C67A2120D99D1E00C5BCFD /* SecureMatrixAutoLoginTests */,
+				91C67A2C20D99D1E00C5BCFD /* SecureMatrixAutoLoginUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		91C67A0C20D99D1C00C5BCFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91C67A1C20D99D1E00C5BCFD /* LaunchScreen.storyboard in Resources */,
+				91C67A1920D99D1E00C5BCFD /* Assets.xcassets in Resources */,
+				91C67A1720D99D1C00C5BCFD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91C67A2020D99D1E00C5BCFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91C67A2B20D99D1E00C5BCFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91C67A0A20D99D1C00C5BCFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91C67A1420D99D1C00C5BCFD /* ViewController.swift in Sources */,
+				91C67A1220D99D1C00C5BCFD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91C67A1E20D99D1E00C5BCFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91C67A2720D99D1E00C5BCFD /* SecureMatrixAutoLoginTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91C67A2920D99D1E00C5BCFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91C67A3220D99D1E00C5BCFD /* SecureMatrixAutoLoginUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		91C67A2420D99D1E00C5BCFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91C67A0D20D99D1C00C5BCFD /* SecureMatrixAutoLogin */;
+			targetProxy = 91C67A2320D99D1E00C5BCFD /* PBXContainerItemProxy */;
+		};
+		91C67A2F20D99D1E00C5BCFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91C67A0D20D99D1C00C5BCFD /* SecureMatrixAutoLogin */;
+			targetProxy = 91C67A2E20D99D1E00C5BCFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		91C67A1520D99D1C00C5BCFD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91C67A1620D99D1C00C5BCFD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		91C67A1A20D99D1E00C5BCFD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91C67A1B20D99D1E00C5BCFD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		91C67A3420D99D1E00C5BCFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		91C67A3520D99D1E00C5BCFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		91C67A3720D99D1E00C5BCFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SecureMatrixAutoLogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = si.mox.SecureMatrixAutoLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		91C67A3820D99D1E00C5BCFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SecureMatrixAutoLogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = si.mox.SecureMatrixAutoLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		91C67A3A20D99D1E00C5BCFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SecureMatrixAutoLoginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = si.mox.SecureMatrixAutoLoginTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecureMatrixAutoLogin.app/SecureMatrixAutoLogin";
+			};
+			name = Debug;
+		};
+		91C67A3B20D99D1E00C5BCFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SecureMatrixAutoLoginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = si.mox.SecureMatrixAutoLoginTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecureMatrixAutoLogin.app/SecureMatrixAutoLogin";
+			};
+			name = Release;
+		};
+		91C67A3D20D99D1E00C5BCFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SecureMatrixAutoLoginUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = si.mox.SecureMatrixAutoLoginUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SecureMatrixAutoLogin;
+			};
+			name = Debug;
+		};
+		91C67A3E20D99D1E00C5BCFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SecureMatrixAutoLoginUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = si.mox.SecureMatrixAutoLoginUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SecureMatrixAutoLogin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91C67A0920D99D1C00C5BCFD /* Build configuration list for PBXProject "SecureMatrixAutoLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91C67A3420D99D1E00C5BCFD /* Debug */,
+				91C67A3520D99D1E00C5BCFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91C67A3620D99D1E00C5BCFD /* Build configuration list for PBXNativeTarget "SecureMatrixAutoLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91C67A3720D99D1E00C5BCFD /* Debug */,
+				91C67A3820D99D1E00C5BCFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91C67A3920D99D1E00C5BCFD /* Build configuration list for PBXNativeTarget "SecureMatrixAutoLoginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91C67A3A20D99D1E00C5BCFD /* Debug */,
+				91C67A3B20D99D1E00C5BCFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91C67A3C20D99D1E00C5BCFD /* Build configuration list for PBXNativeTarget "SecureMatrixAutoLoginUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91C67A3D20D99D1E00C5BCFD /* Debug */,
+				91C67A3E20D99D1E00C5BCFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91C67A0620D99D1C00C5BCFD /* Project object */;
+}
