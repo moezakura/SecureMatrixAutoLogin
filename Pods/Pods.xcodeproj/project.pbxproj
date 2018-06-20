@@ -1,0 +1,976 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C7FF431F11DC789230D4DA5241FFE41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		25D8C8FFC2A485619E1EBECB4B8A0975 /* TextFieldEffects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90ED951F2791925E854531F0FF98E5D8 /* TextFieldEffects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2745783447E0C0603617BF128F986E82 /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C13156D30D470663AD8E2F0122EFC96 /* MadokaTextField.swift */; };
+		2E7477B5CE72D1135FDB4F098B14C5CF /* TextFieldEffects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A9202AFD50843698529BC69AA3E623 /* TextFieldEffects-dummy.m */; };
+		37B70E7163D6BE1425A75259C89E4834 /* Pods-SecureMatrixAutoLoginTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A073B52F063D27440D3C57048CBEE55B /* Pods-SecureMatrixAutoLoginTests-dummy.m */; };
+		5744CBC9E341F62CC5BD99A26888DBF1 /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4B423B2A9D22E359C9E3CB872549A /* JiroTextField.swift */; };
+		5FC7219DC07EC22DEAD5E0AC135970B9 /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9133FAE39EB1D9892F29355AB69358DC /* MinoruTextField.swift */; };
+		7D0132475A72B3E8E7B14BC6B5476959 /* Pods-SecureMatrixAutoLoginUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F5176F9843A1F477C79423AB862285 /* Pods-SecureMatrixAutoLoginUITests-dummy.m */; };
+		830E0AB98454B66F46CC853F3CEC3084 /* Pods-SecureMatrixAutoLogin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 459E64CC237DDA9D5B8A7EBBD0B220B1 /* Pods-SecureMatrixAutoLogin-dummy.m */; };
+		85BEE2AE2C22EE846B18E3AE53911762 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8131792BBEE6A90CF9918BAC65034066 /* AkiraTextField.swift */; };
+		86809363F6C31BF6FEE0A474A28C0A06 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E1C478C66613314778A9E914076019 /* HoshiTextField.swift */; };
+		954FED4E31D7E2ADA78F69DCEC85F98D /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2C3490F5194C7714570F38D6D2E481 /* TextFieldEffects.swift */; };
+		957EDB0C0E005972D5B1D631A54983AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		9640090F8A9DBF50C4580EDCCB02922B /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6472965B50FB550F1E374D7B33A9D5F /* IsaoTextField.swift */; };
+		A57C89F2D8F081A25E0B4E541965C317 /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E63D044812E3765F6EDA42828A72C4 /* YoshikoTextField.swift */; };
+		CAFFE4F859E7EFEA55FA7A06AE2A3DB0 /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21059C29D49087D301FA139D8726F631 /* YokoTextField.swift */; };
+		D50C73F9C71A4A4FCCAA48556E727ECA /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38565F6B1DC573225643D9F2A7505D1A /* KaedeTextField.swift */; };
+		D92F7C66FCAD29B32B5E6DD64E7561E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		DCAAF550A8E028DF05100C79F0FF30CF /* Pods-SecureMatrixAutoLogin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FB310294423F6F3AD3BA2A3BC4D27DA /* Pods-SecureMatrixAutoLogin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEDD604ED6F0BD5EF7447F484FB4E75B /* Pods-SecureMatrixAutoLoginTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EA0A8A8808B5A25E1F3F7DD400ABE21 /* Pods-SecureMatrixAutoLoginTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E597BD3E36985C607142340C2EDCF4EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		FFA77492CA7172F3B1314571268FDD8F /* Pods-SecureMatrixAutoLoginUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3EEEB9B382598A8B1305A0BF944F63E /* Pods-SecureMatrixAutoLoginUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		167C7BB5F888099D67F5402888D09741 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD654A4A8132FEF3F306A14C53C57479;
+			remoteInfo = "Pods-SecureMatrixAutoLogin";
+		};
+		3F678CE0B160F156B3D0995F5F0BDC75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39EE686FC0881F26809605FCB288EBD3;
+			remoteInfo = TextFieldEffects;
+		};
+		B62285D6B32F45B8F7C03131BF9C25E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD654A4A8132FEF3F306A14C53C57479;
+			remoteInfo = "Pods-SecureMatrixAutoLogin";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01A2A1EC2E1F96477E1896FCDFCB89B3 /* Pods-SecureMatrixAutoLoginTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SecureMatrixAutoLoginTests-frameworks.sh"; sourceTree = "<group>"; };
+		01F5176F9843A1F477C79423AB862285 /* Pods-SecureMatrixAutoLoginUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SecureMatrixAutoLoginUITests-dummy.m"; sourceTree = "<group>"; };
+		15FF6B3C422B93FFB87D3CEAF6290F59 /* Pods-SecureMatrixAutoLoginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SecureMatrixAutoLoginTests.release.xcconfig"; sourceTree = "<group>"; };
+		1BBE7FB9EF34E6D7916229086C97EFE6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F30EAD7C26C52CB6DAA7E90475BA5FD /* Pods_SecureMatrixAutoLoginUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SecureMatrixAutoLoginUITests.framework; path = "Pods-SecureMatrixAutoLoginUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21059C29D49087D301FA139D8726F631 /* YokoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = TextFieldEffects/TextFieldEffects/YokoTextField.swift; sourceTree = "<group>"; };
+		2FB310294423F6F3AD3BA2A3BC4D27DA /* Pods-SecureMatrixAutoLogin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SecureMatrixAutoLogin-umbrella.h"; sourceTree = "<group>"; };
+		34E3DEE44C015EA6DEDBA59B8F6F8593 /* Pods_SecureMatrixAutoLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SecureMatrixAutoLogin.framework; path = "Pods-SecureMatrixAutoLogin.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3843CF09AC78CC4E2D57279AA81C08D9 /* Pods-SecureMatrixAutoLoginUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SecureMatrixAutoLoginUITests.release.xcconfig"; sourceTree = "<group>"; };
+		38565F6B1DC573225643D9F2A7505D1A /* KaedeTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaedeTextField.swift; path = TextFieldEffects/TextFieldEffects/KaedeTextField.swift; sourceTree = "<group>"; };
+		3942AB9F595CE1B582405152901B4FEC /* Pods-SecureMatrixAutoLogin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SecureMatrixAutoLogin.modulemap"; sourceTree = "<group>"; };
+		3E0C6088E7EE6B7A140C1D1C6CAA5EDA /* Pods-SecureMatrixAutoLoginUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SecureMatrixAutoLoginUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		40310C8D2A72AB47D308C160CA639E6B /* Pods-SecureMatrixAutoLoginUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SecureMatrixAutoLoginUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		44E1C478C66613314778A9E914076019 /* HoshiTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = TextFieldEffects/TextFieldEffects/HoshiTextField.swift; sourceTree = "<group>"; };
+		459E64CC237DDA9D5B8A7EBBD0B220B1 /* Pods-SecureMatrixAutoLogin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SecureMatrixAutoLogin-dummy.m"; sourceTree = "<group>"; };
+		4E7E4520060C86E291E2539174D254AA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EC4B423B2A9D22E359C9E3CB872549A /* JiroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JiroTextField.swift; path = TextFieldEffects/TextFieldEffects/JiroTextField.swift; sourceTree = "<group>"; };
+		5842D969C881C6766A9B8DFA81834DCD /* Pods-SecureMatrixAutoLoginTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SecureMatrixAutoLoginTests-resources.sh"; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5EA0A8A8808B5A25E1F3F7DD400ABE21 /* Pods-SecureMatrixAutoLoginTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SecureMatrixAutoLoginTests-umbrella.h"; sourceTree = "<group>"; };
+		605B296651DA55CB3FC28018EAD9F92A /* Pods-SecureMatrixAutoLogin-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SecureMatrixAutoLogin-resources.sh"; sourceTree = "<group>"; };
+		614FA8753FF94109D57E32D1F01FA2C9 /* Pods-SecureMatrixAutoLogin-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SecureMatrixAutoLogin-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6197B89D31630B7D28FDADD5B263BD61 /* Pods-SecureMatrixAutoLoginTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SecureMatrixAutoLoginTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		63DDF6FD42E103F83D8DA4F7FA2BC4B2 /* Pods-SecureMatrixAutoLoginTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SecureMatrixAutoLoginTests.modulemap"; sourceTree = "<group>"; };
+		725DCC090DFD4B4262EC2DA7FE9A5DAA /* Pods_SecureMatrixAutoLoginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SecureMatrixAutoLoginTests.framework; path = "Pods-SecureMatrixAutoLoginTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		811CF9AF09EA9C03F3C6C7B1A8568ABF /* Pods-SecureMatrixAutoLoginUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SecureMatrixAutoLoginUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8131792BBEE6A90CF9918BAC65034066 /* AkiraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = TextFieldEffects/TextFieldEffects/AkiraTextField.swift; sourceTree = "<group>"; };
+		8203FB2F9D70CD0F090A6525C0F01887 /* Pods-SecureMatrixAutoLoginUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SecureMatrixAutoLoginUITests.modulemap"; sourceTree = "<group>"; };
+		86E63D044812E3765F6EDA42828A72C4 /* YoshikoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoshikoTextField.swift; path = TextFieldEffects/TextFieldEffects/YoshikoTextField.swift; sourceTree = "<group>"; };
+		8AE263605BD9468AE8CAF1AA23BA1891 /* Pods-SecureMatrixAutoLoginTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SecureMatrixAutoLoginTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8C13156D30D470663AD8E2F0122EFC96 /* MadokaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = TextFieldEffects/TextFieldEffects/MadokaTextField.swift; sourceTree = "<group>"; };
+		90ED951F2791925E854531F0FF98E5D8 /* TextFieldEffects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-umbrella.h"; sourceTree = "<group>"; };
+		9133FAE39EB1D9892F29355AB69358DC /* MinoruTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = TextFieldEffects/TextFieldEffects/MinoruTextField.swift; sourceTree = "<group>"; };
+		915AFE958B467456564B4370BF3BD63B /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
+		92B0EC6BC82A1749CCE9D9B42248DA94 /* Pods-SecureMatrixAutoLoginUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SecureMatrixAutoLoginUITests-frameworks.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		997C1A22698371501A76324284C17113 /* Pods-SecureMatrixAutoLogin-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SecureMatrixAutoLogin-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D0297A5A0C28638B3E9DE5332458BB5 /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TextFieldEffects.framework; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A073B52F063D27440D3C57048CBEE55B /* Pods-SecureMatrixAutoLoginTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SecureMatrixAutoLoginTests-dummy.m"; sourceTree = "<group>"; };
+		A317A2FBDA029E17D7CB59FB08CB6DAC /* Pods-SecureMatrixAutoLoginUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SecureMatrixAutoLoginUITests-resources.sh"; sourceTree = "<group>"; };
+		A58D14F47E17D54E5CB6FC8D5E4A0A5B /* Pods-SecureMatrixAutoLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SecureMatrixAutoLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		A77C5D4C08AAF31C8F7A4710D38BC849 /* TextFieldEffects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextFieldEffects.xcconfig; sourceTree = "<group>"; };
+		BC2C3490F5194C7714570F38D6D2E481 /* TextFieldEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldEffects.swift; path = TextFieldEffects/TextFieldEffects/TextFieldEffects.swift; sourceTree = "<group>"; };
+		BCD85B1BDE5C89D5274E410C785B40F0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C095EA43BFF8BF57573398792A0F0C0A /* Pods-SecureMatrixAutoLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SecureMatrixAutoLogin.release.xcconfig"; sourceTree = "<group>"; };
+		C4A9202AFD50843698529BC69AA3E623 /* TextFieldEffects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TextFieldEffects-dummy.m"; sourceTree = "<group>"; };
+		C53AB4DE7C3DCE424A1ED6AF3D62169F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDFA856FA7530E248EB34E274DB35CDD /* Pods-SecureMatrixAutoLoginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SecureMatrixAutoLoginTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E6472965B50FB550F1E374D7B33A9D5F /* IsaoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = TextFieldEffects/TextFieldEffects/IsaoTextField.swift; sourceTree = "<group>"; };
+		E71F48A5B6783626057B9F314B98571B /* Pods-SecureMatrixAutoLogin-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SecureMatrixAutoLogin-frameworks.sh"; sourceTree = "<group>"; };
+		F3EEEB9B382598A8B1305A0BF944F63E /* Pods-SecureMatrixAutoLoginUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SecureMatrixAutoLoginUITests-umbrella.h"; sourceTree = "<group>"; };
+		FF3C674996A56EC169340CF2CBA1B1A0 /* TextFieldEffects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		139B5D4B6CC8B61928A7DA97CC1A80C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C7FF431F11DC789230D4DA5241FFE41 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		315F482F54136193DBF3135587309319 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D92F7C66FCAD29B32B5E6DD64E7561E9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		928539ABADD5BC0F6239F5196012BDE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				957EDB0C0E005972D5B1D631A54983AB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0BB5913DC28F362471FF9BA29611009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E597BD3E36985C607142340C2EDCF4EC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		072BC74895A3561CBDF82041449DE3FD /* Pods-SecureMatrixAutoLogin */ = {
+			isa = PBXGroup;
+			children = (
+				4E7E4520060C86E291E2539174D254AA /* Info.plist */,
+				3942AB9F595CE1B582405152901B4FEC /* Pods-SecureMatrixAutoLogin.modulemap */,
+				614FA8753FF94109D57E32D1F01FA2C9 /* Pods-SecureMatrixAutoLogin-acknowledgements.markdown */,
+				997C1A22698371501A76324284C17113 /* Pods-SecureMatrixAutoLogin-acknowledgements.plist */,
+				459E64CC237DDA9D5B8A7EBBD0B220B1 /* Pods-SecureMatrixAutoLogin-dummy.m */,
+				E71F48A5B6783626057B9F314B98571B /* Pods-SecureMatrixAutoLogin-frameworks.sh */,
+				605B296651DA55CB3FC28018EAD9F92A /* Pods-SecureMatrixAutoLogin-resources.sh */,
+				2FB310294423F6F3AD3BA2A3BC4D27DA /* Pods-SecureMatrixAutoLogin-umbrella.h */,
+				A58D14F47E17D54E5CB6FC8D5E4A0A5B /* Pods-SecureMatrixAutoLogin.debug.xcconfig */,
+				C095EA43BFF8BF57573398792A0F0C0A /* Pods-SecureMatrixAutoLogin.release.xcconfig */,
+			);
+			name = "Pods-SecureMatrixAutoLogin";
+			path = "Target Support Files/Pods-SecureMatrixAutoLogin";
+			sourceTree = "<group>";
+		};
+		21F9FCC5B9ADE9F727621C7EB3686654 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				072BC74895A3561CBDF82041449DE3FD /* Pods-SecureMatrixAutoLogin */,
+				EE0C1F14A465CEDF1AB939269DA438B8 /* Pods-SecureMatrixAutoLoginTests */,
+				DAF3DFAFCBE92C4B94F3B643BF020695 /* Pods-SecureMatrixAutoLoginUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		55EDCE76AA05D63B893FD4328BFE3F6B /* TextFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				8131792BBEE6A90CF9918BAC65034066 /* AkiraTextField.swift */,
+				44E1C478C66613314778A9E914076019 /* HoshiTextField.swift */,
+				E6472965B50FB550F1E374D7B33A9D5F /* IsaoTextField.swift */,
+				4EC4B423B2A9D22E359C9E3CB872549A /* JiroTextField.swift */,
+				38565F6B1DC573225643D9F2A7505D1A /* KaedeTextField.swift */,
+				8C13156D30D470663AD8E2F0122EFC96 /* MadokaTextField.swift */,
+				9133FAE39EB1D9892F29355AB69358DC /* MinoruTextField.swift */,
+				BC2C3490F5194C7714570F38D6D2E481 /* TextFieldEffects.swift */,
+				21059C29D49087D301FA139D8726F631 /* YokoTextField.swift */,
+				86E63D044812E3765F6EDA42828A72C4 /* YoshikoTextField.swift */,
+				7E3DF9ADA80DDE364AE64E3093E1DC09 /* Support Files */,
+			);
+			name = TextFieldEffects;
+			path = TextFieldEffects;
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				FB9A7A6FC3D2FEAD2BDF6ABD4DDE0449 /* Pods */,
+				F530E1BD54BAE9CBB86D3AF246EA2B67 /* Products */,
+				21F9FCC5B9ADE9F727621C7EB3686654 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7E3DF9ADA80DDE364AE64E3093E1DC09 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C53AB4DE7C3DCE424A1ED6AF3D62169F /* Info.plist */,
+				915AFE958B467456564B4370BF3BD63B /* TextFieldEffects.modulemap */,
+				A77C5D4C08AAF31C8F7A4710D38BC849 /* TextFieldEffects.xcconfig */,
+				C4A9202AFD50843698529BC69AA3E623 /* TextFieldEffects-dummy.m */,
+				FF3C674996A56EC169340CF2CBA1B1A0 /* TextFieldEffects-prefix.pch */,
+				90ED951F2791925E854531F0FF98E5D8 /* TextFieldEffects-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TextFieldEffects";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAF3DFAFCBE92C4B94F3B643BF020695 /* Pods-SecureMatrixAutoLoginUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1BBE7FB9EF34E6D7916229086C97EFE6 /* Info.plist */,
+				8203FB2F9D70CD0F090A6525C0F01887 /* Pods-SecureMatrixAutoLoginUITests.modulemap */,
+				3E0C6088E7EE6B7A140C1D1C6CAA5EDA /* Pods-SecureMatrixAutoLoginUITests-acknowledgements.markdown */,
+				40310C8D2A72AB47D308C160CA639E6B /* Pods-SecureMatrixAutoLoginUITests-acknowledgements.plist */,
+				01F5176F9843A1F477C79423AB862285 /* Pods-SecureMatrixAutoLoginUITests-dummy.m */,
+				92B0EC6BC82A1749CCE9D9B42248DA94 /* Pods-SecureMatrixAutoLoginUITests-frameworks.sh */,
+				A317A2FBDA029E17D7CB59FB08CB6DAC /* Pods-SecureMatrixAutoLoginUITests-resources.sh */,
+				F3EEEB9B382598A8B1305A0BF944F63E /* Pods-SecureMatrixAutoLoginUITests-umbrella.h */,
+				811CF9AF09EA9C03F3C6C7B1A8568ABF /* Pods-SecureMatrixAutoLoginUITests.debug.xcconfig */,
+				3843CF09AC78CC4E2D57279AA81C08D9 /* Pods-SecureMatrixAutoLoginUITests.release.xcconfig */,
+			);
+			name = "Pods-SecureMatrixAutoLoginUITests";
+			path = "Target Support Files/Pods-SecureMatrixAutoLoginUITests";
+			sourceTree = "<group>";
+		};
+		EE0C1F14A465CEDF1AB939269DA438B8 /* Pods-SecureMatrixAutoLoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCD85B1BDE5C89D5274E410C785B40F0 /* Info.plist */,
+				63DDF6FD42E103F83D8DA4F7FA2BC4B2 /* Pods-SecureMatrixAutoLoginTests.modulemap */,
+				8AE263605BD9468AE8CAF1AA23BA1891 /* Pods-SecureMatrixAutoLoginTests-acknowledgements.markdown */,
+				6197B89D31630B7D28FDADD5B263BD61 /* Pods-SecureMatrixAutoLoginTests-acknowledgements.plist */,
+				A073B52F063D27440D3C57048CBEE55B /* Pods-SecureMatrixAutoLoginTests-dummy.m */,
+				01A2A1EC2E1F96477E1896FCDFCB89B3 /* Pods-SecureMatrixAutoLoginTests-frameworks.sh */,
+				5842D969C881C6766A9B8DFA81834DCD /* Pods-SecureMatrixAutoLoginTests-resources.sh */,
+				5EA0A8A8808B5A25E1F3F7DD400ABE21 /* Pods-SecureMatrixAutoLoginTests-umbrella.h */,
+				CDFA856FA7530E248EB34E274DB35CDD /* Pods-SecureMatrixAutoLoginTests.debug.xcconfig */,
+				15FF6B3C422B93FFB87D3CEAF6290F59 /* Pods-SecureMatrixAutoLoginTests.release.xcconfig */,
+			);
+			name = "Pods-SecureMatrixAutoLoginTests";
+			path = "Target Support Files/Pods-SecureMatrixAutoLoginTests";
+			sourceTree = "<group>";
+		};
+		F530E1BD54BAE9CBB86D3AF246EA2B67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34E3DEE44C015EA6DEDBA59B8F6F8593 /* Pods_SecureMatrixAutoLogin.framework */,
+				725DCC090DFD4B4262EC2DA7FE9A5DAA /* Pods_SecureMatrixAutoLoginTests.framework */,
+				1F30EAD7C26C52CB6DAA7E90475BA5FD /* Pods_SecureMatrixAutoLoginUITests.framework */,
+				9D0297A5A0C28638B3E9DE5332458BB5 /* TextFieldEffects.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB9A7A6FC3D2FEAD2BDF6ABD4DDE0449 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55EDCE76AA05D63B893FD4328BFE3F6B /* TextFieldEffects */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		15BD18F1E38963A961819049CA13030F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEDD604ED6F0BD5EF7447F484FB4E75B /* Pods-SecureMatrixAutoLoginTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2099FE3A7AC07826E2AD7F93B5D8E23F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA77492CA7172F3B1314571268FDD8F /* Pods-SecureMatrixAutoLoginUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8856696FA236C1A72FDF86A879EDA84A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAAF550A8E028DF05100C79F0FF30CF /* Pods-SecureMatrixAutoLogin-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE72E48F64D26F470D2B14B5458CF55A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25D8C8FFC2A485619E1EBECB4B8A0975 /* TextFieldEffects-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		39EE686FC0881F26809605FCB288EBD3 /* TextFieldEffects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76B0B7C212063C3A2D05DBBEA889F363 /* Build configuration list for PBXNativeTarget "TextFieldEffects" */;
+			buildPhases = (
+				7D06B18AB26B1B53424888360A6D7C05 /* Sources */,
+				139B5D4B6CC8B61928A7DA97CC1A80C9 /* Frameworks */,
+				DE72E48F64D26F470D2B14B5458CF55A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextFieldEffects;
+			productName = TextFieldEffects;
+			productReference = 9D0297A5A0C28638B3E9DE5332458BB5 /* TextFieldEffects.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AEB3DCABECC2EC28FB5125CB3250437F /* Pods-SecureMatrixAutoLoginUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBA5FF8E6F698C36B611A8EBD47E10AA /* Build configuration list for PBXNativeTarget "Pods-SecureMatrixAutoLoginUITests" */;
+			buildPhases = (
+				08FA8BE666D672F4557C4AB2BAA3BCD4 /* Sources */,
+				928539ABADD5BC0F6239F5196012BDE9 /* Frameworks */,
+				2099FE3A7AC07826E2AD7F93B5D8E23F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				842B65688F30A185FD1ECF0AD8A3A0C0 /* PBXTargetDependency */,
+			);
+			name = "Pods-SecureMatrixAutoLoginUITests";
+			productName = "Pods-SecureMatrixAutoLoginUITests";
+			productReference = 1F30EAD7C26C52CB6DAA7E90475BA5FD /* Pods_SecureMatrixAutoLoginUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C854943D589228DD3465F7364BF14D58 /* Pods-SecureMatrixAutoLoginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95979C86D86D0FC846A926A749F27E38 /* Build configuration list for PBXNativeTarget "Pods-SecureMatrixAutoLoginTests" */;
+			buildPhases = (
+				024202FBDC96ED4BA0D2620C9252521C /* Sources */,
+				315F482F54136193DBF3135587309319 /* Frameworks */,
+				15BD18F1E38963A961819049CA13030F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FD6A1C8A42FD1E46CFC617627420FAD /* PBXTargetDependency */,
+			);
+			name = "Pods-SecureMatrixAutoLoginTests";
+			productName = "Pods-SecureMatrixAutoLoginTests";
+			productReference = 725DCC090DFD4B4262EC2DA7FE9A5DAA /* Pods_SecureMatrixAutoLoginTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FD654A4A8132FEF3F306A14C53C57479 /* Pods-SecureMatrixAutoLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB9BF663E4AE0D0C5015CFB2218770BB /* Build configuration list for PBXNativeTarget "Pods-SecureMatrixAutoLogin" */;
+			buildPhases = (
+				1CA5DF4E1BCEB3A5616CBA112CA426D4 /* Sources */,
+				D0BB5913DC28F362471FF9BA29611009 /* Frameworks */,
+				8856696FA236C1A72FDF86A879EDA84A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				121BDCFABF6129C94A7DD650DC83CF34 /* PBXTargetDependency */,
+			);
+			name = "Pods-SecureMatrixAutoLogin";
+			productName = "Pods-SecureMatrixAutoLogin";
+			productReference = 34E3DEE44C015EA6DEDBA59B8F6F8593 /* Pods_SecureMatrixAutoLogin.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = F530E1BD54BAE9CBB86D3AF246EA2B67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD654A4A8132FEF3F306A14C53C57479 /* Pods-SecureMatrixAutoLogin */,
+				C854943D589228DD3465F7364BF14D58 /* Pods-SecureMatrixAutoLoginTests */,
+				AEB3DCABECC2EC28FB5125CB3250437F /* Pods-SecureMatrixAutoLoginUITests */,
+				39EE686FC0881F26809605FCB288EBD3 /* TextFieldEffects */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		024202FBDC96ED4BA0D2620C9252521C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37B70E7163D6BE1425A75259C89E4834 /* Pods-SecureMatrixAutoLoginTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08FA8BE666D672F4557C4AB2BAA3BCD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D0132475A72B3E8E7B14BC6B5476959 /* Pods-SecureMatrixAutoLoginUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CA5DF4E1BCEB3A5616CBA112CA426D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830E0AB98454B66F46CC853F3CEC3084 /* Pods-SecureMatrixAutoLogin-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D06B18AB26B1B53424888360A6D7C05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85BEE2AE2C22EE846B18E3AE53911762 /* AkiraTextField.swift in Sources */,
+				86809363F6C31BF6FEE0A474A28C0A06 /* HoshiTextField.swift in Sources */,
+				9640090F8A9DBF50C4580EDCCB02922B /* IsaoTextField.swift in Sources */,
+				5744CBC9E341F62CC5BD99A26888DBF1 /* JiroTextField.swift in Sources */,
+				D50C73F9C71A4A4FCCAA48556E727ECA /* KaedeTextField.swift in Sources */,
+				2745783447E0C0603617BF128F986E82 /* MadokaTextField.swift in Sources */,
+				5FC7219DC07EC22DEAD5E0AC135970B9 /* MinoruTextField.swift in Sources */,
+				2E7477B5CE72D1135FDB4F098B14C5CF /* TextFieldEffects-dummy.m in Sources */,
+				954FED4E31D7E2ADA78F69DCEC85F98D /* TextFieldEffects.swift in Sources */,
+				CAFFE4F859E7EFEA55FA7A06AE2A3DB0 /* YokoTextField.swift in Sources */,
+				A57C89F2D8F081A25E0B4E541965C317 /* YoshikoTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		121BDCFABF6129C94A7DD650DC83CF34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TextFieldEffects;
+			target = 39EE686FC0881F26809605FCB288EBD3 /* TextFieldEffects */;
+			targetProxy = 3F678CE0B160F156B3D0995F5F0BDC75 /* PBXContainerItemProxy */;
+		};
+		6FD6A1C8A42FD1E46CFC617627420FAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SecureMatrixAutoLogin";
+			target = FD654A4A8132FEF3F306A14C53C57479 /* Pods-SecureMatrixAutoLogin */;
+			targetProxy = 167C7BB5F888099D67F5402888D09741 /* PBXContainerItemProxy */;
+		};
+		842B65688F30A185FD1ECF0AD8A3A0C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SecureMatrixAutoLogin";
+			target = FD654A4A8132FEF3F306A14C53C57479 /* Pods-SecureMatrixAutoLogin */;
+			targetProxy = B62285D6B32F45B8F7C03131BF9C25E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08638A96A528B1EC32DE62F8A728389D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		62F74CBEDBCA725F97B3C8347DAEB6AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDFA856FA7530E248EB34E274DB35CDD /* Pods-SecureMatrixAutoLoginTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SecureMatrixAutoLoginTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SecureMatrixAutoLoginTests/Pods-SecureMatrixAutoLoginTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		991A0B5058F4DA9416F2C0823AE439CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A58D14F47E17D54E5CB6FC8D5E4A0A5B /* Pods-SecureMatrixAutoLogin.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SecureMatrixAutoLogin/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SecureMatrixAutoLogin/Pods-SecureMatrixAutoLogin.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A31528A4411129B00428E74297E7E854 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A77C5D4C08AAF31C8F7A4710D38BC849 /* TextFieldEffects.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				PRODUCT_MODULE_NAME = TextFieldEffects;
+				PRODUCT_NAME = TextFieldEffects;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5D70F659A50557CCA7EF017DBDDF216 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A77C5D4C08AAF31C8F7A4710D38BC849 /* TextFieldEffects.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				PRODUCT_MODULE_NAME = TextFieldEffects;
+				PRODUCT_NAME = TextFieldEffects;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BF1A9DB55EEA6FC1CABA5D487777A8F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3843CF09AC78CC4E2D57279AA81C08D9 /* Pods-SecureMatrixAutoLoginUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SecureMatrixAutoLoginUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SecureMatrixAutoLoginUITests/Pods-SecureMatrixAutoLoginUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D238AD00D5F08B560A850C46483C5171 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15FF6B3C422B93FFB87D3CEAF6290F59 /* Pods-SecureMatrixAutoLoginTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SecureMatrixAutoLoginTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SecureMatrixAutoLoginTests/Pods-SecureMatrixAutoLoginTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D472F1C6E8CD063B203A2836E0CA1D9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C095EA43BFF8BF57573398792A0F0C0A /* Pods-SecureMatrixAutoLogin.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SecureMatrixAutoLogin/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SecureMatrixAutoLogin/Pods-SecureMatrixAutoLogin.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F6DEF52E92237202445C569C39D0EE99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 811CF9AF09EA9C03F3C6C7B1A8568ABF /* Pods-SecureMatrixAutoLoginUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SecureMatrixAutoLoginUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SecureMatrixAutoLoginUITests/Pods-SecureMatrixAutoLoginUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */,
+				08638A96A528B1EC32DE62F8A728389D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76B0B7C212063C3A2D05DBBEA889F363 /* Build configuration list for PBXNativeTarget "TextFieldEffects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A31528A4411129B00428E74297E7E854 /* Debug */,
+				A5D70F659A50557CCA7EF017DBDDF216 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95979C86D86D0FC846A926A749F27E38 /* Build configuration list for PBXNativeTarget "Pods-SecureMatrixAutoLoginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62F74CBEDBCA725F97B3C8347DAEB6AF /* Debug */,
+				D238AD00D5F08B560A850C46483C5171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB9BF663E4AE0D0C5015CFB2218770BB /* Build configuration list for PBXNativeTarget "Pods-SecureMatrixAutoLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				991A0B5058F4DA9416F2C0823AE439CB /* Debug */,
+				D472F1C6E8CD063B203A2836E0CA1D9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBA5FF8E6F698C36B611A8EBD47E10AA /* Build configuration list for PBXNativeTarget "Pods-SecureMatrixAutoLoginUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6DEF52E92237202445C569C39D0EE99 /* Debug */,
+				BF1A9DB55EEA6FC1CABA5D487777A8F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

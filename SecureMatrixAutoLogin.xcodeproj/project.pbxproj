@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32B027BC7A426C1057A4B83C /* Pods_SecureMatrixAutoLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B19D16FC90BCB07D10A0D5F /* Pods_SecureMatrixAutoLogin.framework */; };
+		43A6C0CD546A03255F171BF5 /* Pods_SecureMatrixAutoLoginUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B21CF7A254D1C3C6D7EF0C7 /* Pods_SecureMatrixAutoLoginUITests.framework */; };
 		91C67A1220D99D1C00C5BCFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C67A1120D99D1C00C5BCFD /* AppDelegate.swift */; };
 		91C67A1420D99D1C00C5BCFD /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C67A1320D99D1C00C5BCFD /* BrowserViewController.swift */; };
 		91C67A1720D99D1C00C5BCFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91C67A1520D99D1C00C5BCFD /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		91C67A1C20D99D1E00C5BCFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91C67A1A20D99D1E00C5BCFD /* LaunchScreen.storyboard */; };
 		91C67A2720D99D1E00C5BCFD /* SecureMatrixAutoLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C67A2620D99D1E00C5BCFD /* SecureMatrixAutoLoginTests.swift */; };
 		91C67A3220D99D1E00C5BCFD /* SecureMatrixAutoLoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C67A3120D99D1E00C5BCFD /* SecureMatrixAutoLoginUITests.swift */; };
+		C60C292A13FED5E89A676C5F /* Pods_SecureMatrixAutoLoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8937FF5ECB4F11095063BD /* Pods_SecureMatrixAutoLoginTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A3551D9B2184D65914CDC8B /* Pods-SecureMatrixAutoLoginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecureMatrixAutoLoginTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SecureMatrixAutoLoginTests/Pods-SecureMatrixAutoLoginTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0B21CF7A254D1C3C6D7EF0C7 /* Pods_SecureMatrixAutoLoginUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecureMatrixAutoLoginUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		597F3E42CF1AA61D6276C67B /* Pods-SecureMatrixAutoLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecureMatrixAutoLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-SecureMatrixAutoLogin/Pods-SecureMatrixAutoLogin.release.xcconfig"; sourceTree = "<group>"; };
+		7B6997CC1F1CFEF8D963D4FB /* Pods-SecureMatrixAutoLoginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecureMatrixAutoLoginTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SecureMatrixAutoLoginTests/Pods-SecureMatrixAutoLoginTests.release.xcconfig"; sourceTree = "<group>"; };
 		91C67A0E20D99D1C00C5BCFD /* SecureMatrixAutoLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureMatrixAutoLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91C67A1120D99D1C00C5BCFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91C67A1320D99D1C00C5BCFD /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +54,11 @@
 		91C67A2D20D99D1E00C5BCFD /* SecureMatrixAutoLoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecureMatrixAutoLoginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91C67A3120D99D1E00C5BCFD /* SecureMatrixAutoLoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureMatrixAutoLoginUITests.swift; sourceTree = "<group>"; };
 		91C67A3320D99D1E00C5BCFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B19D16FC90BCB07D10A0D5F /* Pods_SecureMatrixAutoLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecureMatrixAutoLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDB532C6250AFCC69D4C2E06 /* Pods-SecureMatrixAutoLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecureMatrixAutoLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SecureMatrixAutoLogin/Pods-SecureMatrixAutoLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		E460C8CF5DA7CDC765A4B3C1 /* Pods-SecureMatrixAutoLoginUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecureMatrixAutoLoginUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SecureMatrixAutoLoginUITests/Pods-SecureMatrixAutoLoginUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EA8937FF5ECB4F11095063BD /* Pods_SecureMatrixAutoLoginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecureMatrixAutoLoginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0458610FEC0F619F1E7B434 /* Pods-SecureMatrixAutoLoginUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecureMatrixAutoLoginUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SecureMatrixAutoLoginUITests/Pods-SecureMatrixAutoLoginUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32B027BC7A426C1057A4B83C /* Pods_SecureMatrixAutoLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C60C292A13FED5E89A676C5F /* Pods_SecureMatrixAutoLoginTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43A6C0CD546A03255F171BF5 /* Pods_SecureMatrixAutoLoginUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2628D4640EA3329C9C0587F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B19D16FC90BCB07D10A0D5F /* Pods_SecureMatrixAutoLogin.framework */,
+				EA8937FF5ECB4F11095063BD /* Pods_SecureMatrixAutoLoginTests.framework */,
+				0B21CF7A254D1C3C6D7EF0C7 /* Pods_SecureMatrixAutoLoginUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		91C67A0520D99D1C00C5BCFD = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +106,8 @@
 				91C67A2520D99D1E00C5BCFD /* SecureMatrixAutoLoginTests */,
 				91C67A3020D99D1E00C5BCFD /* SecureMatrixAutoLoginUITests */,
 				91C67A0F20D99D1C00C5BCFD /* Products */,
+				C4D481D323F6751F273D5C58 /* Pods */,
+				2628D4640EA3329C9C0587F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +152,19 @@
 			path = SecureMatrixAutoLoginUITests;
 			sourceTree = "<group>";
 		};
+		C4D481D323F6751F273D5C58 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDB532C6250AFCC69D4C2E06 /* Pods-SecureMatrixAutoLogin.debug.xcconfig */,
+				597F3E42CF1AA61D6276C67B /* Pods-SecureMatrixAutoLogin.release.xcconfig */,
+				0A3551D9B2184D65914CDC8B /* Pods-SecureMatrixAutoLoginTests.debug.xcconfig */,
+				7B6997CC1F1CFEF8D963D4FB /* Pods-SecureMatrixAutoLoginTests.release.xcconfig */,
+				F0458610FEC0F619F1E7B434 /* Pods-SecureMatrixAutoLoginUITests.debug.xcconfig */,
+				E460C8CF5DA7CDC765A4B3C1 /* Pods-SecureMatrixAutoLoginUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91C67A3620D99D1E00C5BCFD /* Build configuration list for PBXNativeTarget "SecureMatrixAutoLogin" */;
 			buildPhases = (
+				FB35CF5254CDF1335FC1DC41 /* [CP] Check Pods Manifest.lock */,
 				91C67A0A20D99D1C00C5BCFD /* Sources */,
 				91C67A0B20D99D1C00C5BCFD /* Frameworks */,
 				91C67A0C20D99D1C00C5BCFD /* Resources */,
+				D77FAAB607CAB38B933391D8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91C67A3920D99D1E00C5BCFD /* Build configuration list for PBXNativeTarget "SecureMatrixAutoLoginTests" */;
 			buildPhases = (
+				E03B39CCEA0C7CC76571A7FB /* [CP] Check Pods Manifest.lock */,
 				91C67A1E20D99D1E00C5BCFD /* Sources */,
 				91C67A1F20D99D1E00C5BCFD /* Frameworks */,
 				91C67A2020D99D1E00C5BCFD /* Resources */,
@@ -167,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91C67A3C20D99D1E00C5BCFD /* Build configuration list for PBXNativeTarget "SecureMatrixAutoLoginUITests" */;
 			buildPhases = (
+				FE8DAEA083FB74074EFA835A /* [CP] Check Pods Manifest.lock */,
 				91C67A2920D99D1E00C5BCFD /* Sources */,
 				91C67A2A20D99D1E00C5BCFD /* Frameworks */,
 				91C67A2B20D99D1E00C5BCFD /* Resources */,
@@ -250,6 +294,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D77FAAB607CAB38B933391D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SecureMatrixAutoLogin/Pods-SecureMatrixAutoLogin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SecureMatrixAutoLogin/Pods-SecureMatrixAutoLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E03B39CCEA0C7CC76571A7FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SecureMatrixAutoLoginTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB35CF5254CDF1335FC1DC41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SecureMatrixAutoLogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE8DAEA083FB74074EFA835A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SecureMatrixAutoLoginUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		91C67A0A20D99D1C00C5BCFD /* Sources */ = {
@@ -428,6 +547,7 @@
 		};
 		91C67A3720D99D1E00C5BCFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDB532C6250AFCC69D4C2E06 /* Pods-SecureMatrixAutoLogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +567,7 @@
 		};
 		91C67A3820D99D1E00C5BCFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 597F3E42CF1AA61D6276C67B /* Pods-SecureMatrixAutoLogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +587,7 @@
 		};
 		91C67A3A20D99D1E00C5BCFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A3551D9B2184D65914CDC8B /* Pods-SecureMatrixAutoLoginTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -486,6 +608,7 @@
 		};
 		91C67A3B20D99D1E00C5BCFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B6997CC1F1CFEF8D963D4FB /* Pods-SecureMatrixAutoLoginTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +629,7 @@
 		};
 		91C67A3D20D99D1E00C5BCFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0458610FEC0F619F1E7B434 /* Pods-SecureMatrixAutoLoginUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -525,6 +649,7 @@
 		};
 		91C67A3E20D99D1E00C5BCFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E460C8CF5DA7CDC765A4B3C1 /* Pods-SecureMatrixAutoLoginUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
