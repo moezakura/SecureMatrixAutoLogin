@@ -39,8 +39,39 @@ class BrowserViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
         print("読み込み完了")
         let pw = UserData.getPassword()
         let passwordObj = PasswordManager.Parse(text: pw)
+        let passwordInfoJson = PasswordManager.ToJson(passwordObj)
         
-        debugPrint(PasswordManager.ToJson(passwordObj))
+        let runScript = """
+        (function() {
+        let secureMatrixTdDOM = document.querySelectorAll(".allMatrix td");
+        if (secureMatrixTdDOM === undefined || secureMatrixTdDOM == null)
+        return;
+        let secureMatrixDom = [],
+        secureMatrix = [],
+        password = \(passwordInfoJson);
+        secureMatrixTdDOM.forEach(function(value) {
+        if (value.innerText.length === 1) {
+        secureMatrixDom.push(value);
+        secureMatrix.push(value.innerText);
+        }
+        });
+        
+        let passwordText = "";
+        password.forEach(function(value) {
+        if (value.IsMatrix) {
+        let text = secureMatrix[value.Number];
+        passwordText += text;
+        } else passwordText += value.Number;
+        });
+        
+        let passwordInput = document.querySelector("form[name=GUID] input[type=password]");
+        if (passwordInput === undefined || passwordInput == null)
+        alert("Not found secureMatrix password input.");
+        passwordInput.value = passwordText;
+        })();
+        """
+        
+        webView.evaluateJavaScript(runScript, completionHandler: nil)
         
         
         print(webView.title as Any)
