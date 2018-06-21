@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordParent: UIScrollView!
     @IBOutlet weak var passwordType: UITextField!
     
@@ -18,6 +18,8 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        passwordType.delegate = self
         
         for i in 0...3{
             let passwordCell = PasswordCell.load(owner: passwordParent)
@@ -37,6 +39,11 @@ class SettingsViewController: UIViewController {
         if let range = passwordType.selectedTextRange {
             passwordType.replace(range, withText: insertText)
         }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
