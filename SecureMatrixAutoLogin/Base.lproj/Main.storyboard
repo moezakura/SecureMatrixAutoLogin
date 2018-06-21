@@ -136,6 +136,9 @@
                                                 <real key="value" value="0.0"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="textFieldEditBegin:" destination="mmd-Vz-8Pa" eventType="editingDidBegin" id="XeA-6w-hOj"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

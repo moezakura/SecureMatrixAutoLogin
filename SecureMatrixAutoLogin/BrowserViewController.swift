@@ -35,10 +35,22 @@ class BrowserViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
         
         webView.addObserver(self, forKeyPath: "loading", options: .new, context: nil)
         webView.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil)
+        
+        urlTextField.selectAll(self)
     }
     
     @IBAction func reloadTaped(_ sender: UIButton) {
         webView.reload()
+    }
+    
+    @IBAction func textFieldEditBegin(_ sender: UITextField) {
+        if sender != self.urlTextField {
+            return
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            sender.selectAll(sender.text)
+        }
     }
     
     deinit{
