@@ -48,4 +48,16 @@ class PasswordManager {
             return ""
         }
     }
+    
+    static func ToJson(_ object: Array<PasswordObject>) -> String{
+        let encoder = JSONEncoder()
+        do {
+            let data = try encoder.encode(object)
+            let jsonstr:String = String(data: data, encoding: .utf8)!
+            return jsonstr
+        } catch {
+            print(error.localizedDescription)
+            return ""
+        }
+    }
 }
