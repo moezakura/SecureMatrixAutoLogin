@@ -34,7 +34,7 @@
                                 </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet" keyboardAppearance="alert" returnKeyType="done"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
                                         <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -103,9 +103,55 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4jd-JZ-gcf">
                                 <rect key="frame" x="0.0" y="20" width="375" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZC1-zi-acg">
+                                        <rect key="frame" x="328" y="3" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="NAs-IB-en0"/>
+                                            <constraint firstAttribute="height" constant="44" id="UwO-ik-xey"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <state key="normal" image="reload"/>
+                                        <connections>
+                                            <action selector="reloadTaped:" destination="mmd-Vz-8Pa" eventType="touchUpInside" id="Yvr-ja-9i3"/>
+                                        </connections>
+                                    </button>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uZN-ne-NvF">
+                                        <rect key="frame" x="0.0" y="56.5" width="375" height="2.5"/>
+                                        <color key="tintColor" red="0.72941176470000002" green="0.40784313729999999" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                    </progressView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CBL-hu-JFQ" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                        <rect key="frame" x="10" y="0.0" width="315" height="47"/>
+                                        <color key="tintColor" red="0.72941176470000002" green="0.40784313729999999" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="URL" keyboardAppearance="alert" returnKeyType="go"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.72941176470000002" green="0.40784313729999999" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="CBL-hu-JFQ" firstAttribute="top" secondItem="4jd-JZ-gcf" secondAttribute="top" id="4eo-ew-gW8"/>
+                                    <constraint firstItem="uZN-ne-NvF" firstAttribute="leading" secondItem="4jd-JZ-gcf" secondAttribute="leading" id="G5A-5z-A57"/>
                                     <constraint firstAttribute="height" constant="50" id="RTY-eO-d77"/>
+                                    <constraint firstAttribute="bottom" secondItem="uZN-ne-NvF" secondAttribute="bottom" constant="-8" id="SFK-mI-12w"/>
+                                    <constraint firstAttribute="trailing" secondItem="uZN-ne-NvF" secondAttribute="trailing" id="VLr-AP-91o"/>
+                                    <constraint firstAttribute="bottom" secondItem="CBL-hu-JFQ" secondAttribute="bottom" constant="3" id="WAf-Td-xlf"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZC1-zi-acg" secondAttribute="bottom" constant="3" id="agP-C3-rtp"/>
+                                    <constraint firstItem="CBL-hu-JFQ" firstAttribute="leading" secondItem="4jd-JZ-gcf" secondAttribute="leading" constant="10" id="cUp-Du-wTj"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZC1-zi-acg" secondAttribute="trailing" constant="3" id="pL6-mh-rRa"/>
+                                    <constraint firstItem="ZC1-zi-acg" firstAttribute="top" secondItem="4jd-JZ-gcf" secondAttribute="top" constant="3" id="v6C-fi-L9H"/>
+                                    <constraint firstItem="ZC1-zi-acg" firstAttribute="leading" secondItem="CBL-hu-JFQ" secondAttribute="trailing" constant="3" id="z3o-3T-hH6"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IfB-zf-rzf">
@@ -128,6 +174,8 @@
                     <tabBarItem key="tabBarItem" title="Browser" image="mozillafirefox" id="YYt-80-dZe"/>
                     <connections>
                         <outlet property="headView" destination="4jd-JZ-gcf" id="Nfc-J9-gmF"/>
+                        <outlet property="progressBar" destination="uZN-ne-NvF" id="QuI-EV-Mrg"/>
+                        <outlet property="urlTextField" destination="CBL-hu-JFQ" id="Rdp-tQ-hKc"/>
                         <outlet property="webViewParentView" destination="IfB-zf-rzf" id="6bG-rN-1Yj"/>
                     </connections>
                 </viewController>
@@ -159,5 +207,6 @@
     </scenes>
     <resources>
         <image name="mozillafirefox" width="29" height="30"/>
+        <image name="reload" width="217" height="200"/>
     </resources>
 </document>

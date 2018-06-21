@@ -9,33 +9,67 @@
 import UIKit
 import WebKit
 
-class BrowserViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
+class BrowserViewController: UIViewController, WKUIDelegate, WKNavigationDelegate, UITextFieldDelegate {
     
     var webView: WKWebView!
     @IBOutlet weak var headView: UIView!
     @IBOutlet weak var webViewParentView: UIView!
+    @IBOutlet weak var urlTextField: UITextField!
+    @IBOutlet weak var progressBar: UIProgressView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        urlTextField.delegate = self
+        
         webView = WKWebView(frame:CGRect(x:0, y:0, width:self.webViewParentView.bounds.size.width, height:self.webViewParentView.bounds.size.height))
         webView.uiDelegate = self
         webView.navigationDelegate = self
         
-        // URL設定
-        let urlString = "http://kw.kait.jp/kw/top/"
+        loadWebView("http://kw.kait.jp/kw/top/")
+        
+        self.webViewParentView.addSubview(webView)
+        
+        webView.addObserver(self, forKeyPath: "loading", options: .new, context: nil)
+        webView.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil)
+    }
+    
+    @IBAction func reloadTaped(_ sender: UIButton) {
+        webView.reload()
+    }
+    
+    deinit{
+        webView.removeObserver(self, forKeyPath: "estimatedProgress")
+        webView.removeObserver(self, forKeyPath: "loading")
+    }
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if keyPath == "estimatedProgress"{
+            progressBar.setProgress(Float(webView.estimatedProgress), animated: true)
+        }else if keyPath == "loading"{
+            UIApplication.shared.isNetworkActivityIndicatorVisible = webView.isLoading
+            if webView.isLoading{
+                progressBar.setProgress(0.1, animated: true)
+            }else{
+                progressBar.setProgress(0.0, animated: false)
+            }
+        }
+    }
+    
+    func loadWebView(_ urlString: String){
         let encodedUrlString = urlString.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed)
         
         let url = NSURL(string: encodedUrlString!)
         let request = NSURLRequest(url: url! as URL)
         
         webView.load(request as URLRequest)
-        
-        self.webViewParentView.addSubview(webView)
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        urlTextField.text = webView.url?.absoluteString
+        
         let pw = UserData.getPassword()
         let passwordObj = PasswordManager.Parse(text: pw)
         let passwordInfoJson = PasswordManager.ToJson(passwordObj)
@@ -73,6 +107,19 @@ class BrowserViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
         webView.evaluateJavaScript(runScript, completionHandler: nil)
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        let urlBarText = textField.text!
+        if urlBarText.starts(with: "http://") || urlBarText.starts(with: "https://") {
+            loadWebView(urlBarText)
+        }else{
+            let encoded = urlBarText.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!
+            loadWebView("https://google.com/?q=" + encoded)
+        }
+        
+        return true
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
