@@ -17,17 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SecureMatrixAutoLogin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RzZ-EW-hv7">
-                                <rect key="frame" x="98" y="323" width="179" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KSAT" translatesAutoresizingMaskIntoConstraints="NO" id="BvE-c8-Lks">
+                                <rect key="frame" x="67.5" y="213.5" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="b9u-9c-uXq"/>
+                                    <constraint firstAttribute="width" constant="240" id="cgl-yC-bk4"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="RzZ-EW-hv7" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="WMI-MH-i6x"/>
-                            <constraint firstItem="RzZ-EW-hv7" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="xTx-ll-RbQ"/>
+                            <constraint firstItem="BvE-c8-Lks" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="O2H-If-kF0"/>
+                            <constraint firstItem="BvE-c8-Lks" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Pvr-RI-bOV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -37,4 +38,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="KSAT" width="1024" height="1024"/>
+    </resources>
 </document>
