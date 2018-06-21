@@ -11,6 +11,8 @@ import UIKit
 
 class SettingsViewController: UIViewController {
     @IBOutlet weak var passwordParent: UIScrollView!
+    @IBOutlet weak var passwordType: UITextField!
+    
     var passwordCells: Array<PasswordCell>! = []
     
     override func viewDidLoad() {
@@ -20,6 +22,7 @@ class SettingsViewController: UIViewController {
         for i in 0...3{
             let passwordCell = PasswordCell.load(owner: passwordParent)
             passwordCell.set(i * 16)
+            passwordCell.setTapEvent(self.insertChar)
             passwordCells.append(passwordCell)
             
             let oldRect = passwordCell.frame
@@ -28,6 +31,12 @@ class SettingsViewController: UIViewController {
         }
         let lastPasswordCellRect = passwordCells.last?.frame
         passwordParent.contentSize = CGSize(width: ((lastPasswordCellRect?.width)! + 10) * CGFloat(passwordCells.count),height: (lastPasswordCellRect?.height)!)
+    }
+    
+    func insertChar (_ insertText: String){
+        if let range = passwordType.selectedTextRange {
+            passwordType.replace(range, withText: insertText)
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

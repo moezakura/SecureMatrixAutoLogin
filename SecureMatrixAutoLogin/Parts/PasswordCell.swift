@@ -11,6 +11,7 @@ import UIKit
 class PasswordCell: UICollectionView, UICollectionViewDataSource, UICollectionViewDelegate {
     var startIndex = 0
     var charList: Array<String>! = []
+    var inserEvent: ((String)->Void)?
     
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
@@ -48,6 +49,10 @@ class PasswordCell: UICollectionView, UICollectionViewDataSource, UICollectionVi
         }
     }
     
+    public func setTapEvent(_ event: @escaping (String)->()){
+        inserEvent = event
+    }
+    
     func set(_ _startIndex: Int) {
         startIndex = _startIndex
     }
@@ -60,7 +65,10 @@ class PasswordCell: UICollectionView, UICollectionViewDataSource, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(charList[startIndex + indexPath.row])
+        //print(charList[startIndex + indexPath.row])
+        if let _inserEvent = inserEvent {
+            _inserEvent(charList[startIndex + indexPath.row])
+        }
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {

@@ -82,6 +82,7 @@
                     <tabBarItem key="tabBarItem" systemItem="more" id="ss0-0X-P7i"/>
                     <connections>
                         <outlet property="passwordParent" destination="G2I-dy-iFA" id="6aU-my-NxA"/>
+                        <outlet property="passwordType" destination="g3E-Qx-u92" id="Bch-sv-gVV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fdP-92-dU1" userLabel="First Responder" sceneMemberID="firstResponder"/>
