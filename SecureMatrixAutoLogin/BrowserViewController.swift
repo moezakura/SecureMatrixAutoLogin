@@ -36,7 +36,6 @@ class BrowserViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        print("読み込み完了")
         let pw = UserData.getPassword()
         let passwordObj = PasswordManager.Parse(text: pw)
         let passwordInfoJson = PasswordManager.ToJson(passwordObj)
@@ -72,10 +71,6 @@ class BrowserViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
         """
         
         webView.evaluateJavaScript(runScript, completionHandler: nil)
-        
-        
-        print(webView.title as Any)
-        print(webView.url as Any)
     }
     
 
