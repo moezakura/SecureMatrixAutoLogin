@@ -27,6 +27,7 @@ class BrowserViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
         webView = WKWebView(frame:CGRect(x:0, y:0, width:self.webViewParentView.bounds.size.width, height:self.webViewParentView.bounds.size.height))
         webView.uiDelegate = self
         webView.navigationDelegate = self
+        webView.allowsBackForwardNavigationGestures = true
         
         loadWebView("http://kw.kait.jp/kw/top/")
         
