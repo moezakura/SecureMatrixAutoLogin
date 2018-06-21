@@ -30,23 +30,7 @@ class PasswordCell: UICollectionView, UICollectionViewDataSource, UICollectionVi
     }
     
     func setChars(){
-        // a-z
-        for i in 97...122 {
-            let char = UnicodeScalar(i)
-            charList.append(String(char!))
-        }
-        
-        // A-Z
-        for i in 65...90 {
-            let char = UnicodeScalar(i)
-            charList.append(String(char!))
-        }
-        
-        // Other
-        let otherStr = "-/:;()$&@.,?!"
-        otherStr.forEach {
-            charList.append(String($0))
-        }
+        charList = CharList.Get()
     }
     
     public func setTapEvent(_ event: @escaping (String)->()){

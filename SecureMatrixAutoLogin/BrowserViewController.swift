@@ -37,6 +37,10 @@ class BrowserViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         print("読み込み完了")
+        let pw = UserData.getPassword()
+        debugPrint(PasswordManager.Parse(text: pw))
+        
+        
         print(webView.title as Any)
         print(webView.url as Any)
     }

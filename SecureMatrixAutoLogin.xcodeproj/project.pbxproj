@@ -13,6 +13,9 @@
 		9152311920DACA1E008BC59D /* PasswordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9152311820DACA1E008BC59D /* PasswordCell.xib */; };
 		9152311C20DAE2B1008BC59D /* PasswordCellChild.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9152311B20DAE2B1008BC59D /* PasswordCellChild.xib */; };
 		9152311E20DAE2D0008BC59D /* PasswordCellChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152311D20DAE2D0008BC59D /* PasswordCellChild.swift */; };
+		9152312120DB308A008BC59D /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152312020DB308A008BC59D /* UserData.swift */; };
+		9152312320DB3173008BC59D /* PasswordObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152312220DB3173008BC59D /* PasswordObject.swift */; };
+		9152312520DB358B008BC59D /* CharList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152312420DB358B008BC59D /* CharList.swift */; };
 		917C0A0820DAB8FB00E5009F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917C0A0720DAB8FB00E5009F /* SettingsViewController.swift */; };
 		91C67A1220D99D1C00C5BCFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C67A1120D99D1C00C5BCFD /* AppDelegate.swift */; };
 		91C67A1420D99D1C00C5BCFD /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C67A1320D99D1C00C5BCFD /* BrowserViewController.swift */; };
@@ -50,6 +53,9 @@
 		9152311820DACA1E008BC59D /* PasswordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordCell.xib; sourceTree = "<group>"; };
 		9152311B20DAE2B1008BC59D /* PasswordCellChild.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordCellChild.xib; sourceTree = "<group>"; };
 		9152311D20DAE2D0008BC59D /* PasswordCellChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCellChild.swift; sourceTree = "<group>"; };
+		9152312020DB308A008BC59D /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		9152312220DB3173008BC59D /* PasswordObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordObject.swift; sourceTree = "<group>"; };
+		9152312420DB358B008BC59D /* CharList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharList.swift; sourceTree = "<group>"; };
 		917C0A0720DAB8FB00E5009F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		91C67A0E20D99D1C00C5BCFD /* SecureMatrixAutoLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureMatrixAutoLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91C67A1120D99D1C00C5BCFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +126,16 @@
 			path = Parts;
 			sourceTree = "<group>";
 		};
+		9152311F20DB3060008BC59D /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				9152312020DB308A008BC59D /* UserData.swift */,
+				9152312220DB3173008BC59D /* PasswordObject.swift */,
+				9152312420DB358B008BC59D /* CharList.swift */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
 		91C67A0520D99D1C00C5BCFD = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +165,7 @@
 				91C67A1320D99D1C00C5BCFD /* BrowserViewController.swift */,
 				917C0A0720DAB8FB00E5009F /* SettingsViewController.swift */,
 				91C67A1520D99D1C00C5BCFD /* Main.storyboard */,
+				9152311F20DB3060008BC59D /* Libs */,
 				9152311A20DACA25008BC59D /* Parts */,
 				91C67A1820D99D1E00C5BCFD /* Assets.xcassets */,
 				91C67A1A20D99D1E00C5BCFD /* LaunchScreen.storyboard */,
@@ -402,9 +419,12 @@
 			files = (
 				9152311720DACA05008BC59D /* PasswordCell.swift in Sources */,
 				91C67A1420D99D1C00C5BCFD /* BrowserViewController.swift in Sources */,
+				9152312120DB308A008BC59D /* UserData.swift in Sources */,
+				9152312520DB358B008BC59D /* CharList.swift in Sources */,
 				91C67A1220D99D1C00C5BCFD /* AppDelegate.swift in Sources */,
 				917C0A0820DAB8FB00E5009F /* SettingsViewController.swift in Sources */,
 				9152311E20DAE2D0008BC59D /* PasswordCellChild.swift in Sources */,
+				9152312320DB3173008BC59D /* PasswordObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

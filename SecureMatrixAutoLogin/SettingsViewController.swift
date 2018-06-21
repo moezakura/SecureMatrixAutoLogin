@@ -43,11 +43,19 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+        savePassword()
         return true
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+        savePassword()
+    }
+    
+    func savePassword(){
+        if let password = passwordType.text{
+            UserData.savePassword(password)
+        }
     }
     
     override func didReceiveMemoryWarning() {
