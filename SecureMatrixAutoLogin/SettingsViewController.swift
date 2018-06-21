@@ -12,6 +12,7 @@ import UIKit
 class SettingsViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordParent: UIScrollView!
     @IBOutlet weak var passwordType: UITextField!
+    @IBOutlet weak var selectStatus: UISegmentedControl!
     
     var passwordCells: Array<PasswordCell>! = []
     
@@ -21,7 +22,7 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
         
         passwordType.delegate = self
         
-        for i in 0...3{
+        for i in 0...3 {
             let passwordCell = PasswordCell.load(owner: passwordParent)
             passwordCell.set(i * 16)
             passwordCell.setTapEvent(self.insertChar)
@@ -33,6 +34,23 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
         }
         let lastPasswordCellRect = passwordCells.last?.frame
         passwordParent.contentSize = CGSize(width: ((lastPasswordCellRect?.width)! + 10) * CGFloat(passwordCells.count),height: (lastPasswordCellRect?.height)!)
+        
+        let selectIndex = UserData.getSelectStatus()
+        selectStatus.selectedSegmentIndex = selectIndex
+        statusChange(selectIndex)
+    }
+    
+    @IBAction func changeSegment(_ sender: UISegmentedControl) {
+        statusChange(sender.selectedSegmentIndex)
+    }
+    
+    func statusChange(_ status: Int){
+        passwordCells.last?.isHidden = (status == 0) ? true : false
+        let count = (status == 0) ? passwordCells.count - 1 : passwordCells.count
+        UserData.saveSelectStatus(status)
+        
+        let lastPasswordCellRect = passwordCells.last?.frame
+        passwordParent.contentSize = CGSize(width: ((lastPasswordCellRect?.width)! + 10) * CGFloat(count),height: (lastPasswordCellRect?.height)!)
     }
     
     func insertChar (_ insertText: String){

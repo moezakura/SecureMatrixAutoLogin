@@ -54,6 +54,9 @@
                                     <segment title="4"/>
                                 </segments>
                                 <color key="tintColor" red="0.72941176470000002" green="0.40784313729999999" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeSegment:" destination="JMV-3B-QLY" eventType="valueChanged" id="z2S-gU-IbQ"/>
+                                </connections>
                             </segmentedControl>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="G2I-dy-iFA">
                                 <rect key="frame" x="8" y="187" width="359" height="200"/>
@@ -83,6 +86,7 @@
                     <connections>
                         <outlet property="passwordParent" destination="G2I-dy-iFA" id="6aU-my-NxA"/>
                         <outlet property="passwordType" destination="g3E-Qx-u92" id="Bch-sv-gVV"/>
+                        <outlet property="selectStatus" destination="RTA-wh-LP6" id="yss-ll-0OP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fdP-92-dU1" userLabel="First Responder" sceneMemberID="firstResponder"/>

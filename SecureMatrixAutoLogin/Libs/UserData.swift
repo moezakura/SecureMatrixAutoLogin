@@ -21,4 +21,13 @@ class UserData {
             return ""
         }
     }
+    
+    static func saveSelectStatus(_ status: Int) {
+        UserDefaults.standard.set(status, forKey: "SELECT_STATUS")
+    }
+    
+    static func getSelectStatus() -> Int {
+        let status = UserDefaults.standard.integer(forKey: "SELECT_STATUS")
+        return status
+    }
 }
