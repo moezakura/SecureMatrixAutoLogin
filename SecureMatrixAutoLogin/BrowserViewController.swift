@@ -116,7 +116,7 @@ class BrowserViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
             loadWebView(urlBarText)
         }else{
             let encoded = urlBarText.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!
-            loadWebView("https://google.com/?q=" + encoded)
+            loadWebView("https://google.com/search?q=" + encoded)
         }
         
         return true
