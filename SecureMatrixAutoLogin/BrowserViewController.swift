@@ -35,8 +35,6 @@ class BrowserViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
         
         webView.addObserver(self, forKeyPath: "loading", options: .new, context: nil)
         webView.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil)
-        
-        urlTextField.selectAll(self)
     }
     
     @IBAction func reloadTaped(_ sender: UIButton) {
@@ -72,9 +70,7 @@ class BrowserViewController: UIViewController, WKUIDelegate, WKNavigationDelegat
     }
     
     func loadWebView(_ urlString: String){
-        let encodedUrlString = urlString.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed)
-        
-        let url = NSURL(string: encodedUrlString!)
+        let url = NSURL(string: urlString)
         let request = NSURLRequest(url: url! as URL)
         
         webView.load(request as URLRequest)
