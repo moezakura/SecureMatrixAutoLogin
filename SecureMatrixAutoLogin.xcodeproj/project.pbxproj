@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		32B027BC7A426C1057A4B83C /* Pods_SecureMatrixAutoLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B19D16FC90BCB07D10A0D5F /* Pods_SecureMatrixAutoLogin.framework */; };
 		43A6C0CD546A03255F171BF5 /* Pods_SecureMatrixAutoLoginUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B21CF7A254D1C3C6D7EF0C7 /* Pods_SecureMatrixAutoLoginUITests.framework */; };
+		9152311720DACA05008BC59D /* PasswordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152311620DACA05008BC59D /* PasswordCell.swift */; };
+		9152311920DACA1E008BC59D /* PasswordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9152311820DACA1E008BC59D /* PasswordCell.xib */; };
+		9152311C20DAE2B1008BC59D /* PasswordCellChild.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9152311B20DAE2B1008BC59D /* PasswordCellChild.xib */; };
+		9152311E20DAE2D0008BC59D /* PasswordCellChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152311D20DAE2D0008BC59D /* PasswordCellChild.swift */; };
+		917C0A0820DAB8FB00E5009F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917C0A0720DAB8FB00E5009F /* SettingsViewController.swift */; };
 		91C67A1220D99D1C00C5BCFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C67A1120D99D1C00C5BCFD /* AppDelegate.swift */; };
 		91C67A1420D99D1C00C5BCFD /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C67A1320D99D1C00C5BCFD /* BrowserViewController.swift */; };
 		91C67A1720D99D1C00C5BCFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91C67A1520D99D1C00C5BCFD /* Main.storyboard */; };
@@ -41,6 +46,11 @@
 		0B21CF7A254D1C3C6D7EF0C7 /* Pods_SecureMatrixAutoLoginUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecureMatrixAutoLoginUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		597F3E42CF1AA61D6276C67B /* Pods-SecureMatrixAutoLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecureMatrixAutoLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-SecureMatrixAutoLogin/Pods-SecureMatrixAutoLogin.release.xcconfig"; sourceTree = "<group>"; };
 		7B6997CC1F1CFEF8D963D4FB /* Pods-SecureMatrixAutoLoginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecureMatrixAutoLoginTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SecureMatrixAutoLoginTests/Pods-SecureMatrixAutoLoginTests.release.xcconfig"; sourceTree = "<group>"; };
+		9152311620DACA05008BC59D /* PasswordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCell.swift; sourceTree = "<group>"; };
+		9152311820DACA1E008BC59D /* PasswordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordCell.xib; sourceTree = "<group>"; };
+		9152311B20DAE2B1008BC59D /* PasswordCellChild.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordCellChild.xib; sourceTree = "<group>"; };
+		9152311D20DAE2D0008BC59D /* PasswordCellChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCellChild.swift; sourceTree = "<group>"; };
+		917C0A0720DAB8FB00E5009F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		91C67A0E20D99D1C00C5BCFD /* SecureMatrixAutoLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureMatrixAutoLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91C67A1120D99D1C00C5BCFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91C67A1320D99D1C00C5BCFD /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +109,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9152311A20DACA25008BC59D /* Parts */ = {
+			isa = PBXGroup;
+			children = (
+				9152311820DACA1E008BC59D /* PasswordCell.xib */,
+				9152311620DACA05008BC59D /* PasswordCell.swift */,
+				9152311B20DAE2B1008BC59D /* PasswordCellChild.xib */,
+				9152311D20DAE2D0008BC59D /* PasswordCellChild.swift */,
+			);
+			path = Parts;
+			sourceTree = "<group>";
+		};
 		91C67A0520D99D1C00C5BCFD = {
 			isa = PBXGroup;
 			children = (
@@ -126,7 +147,9 @@
 			children = (
 				91C67A1120D99D1C00C5BCFD /* AppDelegate.swift */,
 				91C67A1320D99D1C00C5BCFD /* BrowserViewController.swift */,
+				917C0A0720DAB8FB00E5009F /* SettingsViewController.swift */,
 				91C67A1520D99D1C00C5BCFD /* Main.storyboard */,
+				9152311A20DACA25008BC59D /* Parts */,
 				91C67A1820D99D1E00C5BCFD /* Assets.xcassets */,
 				91C67A1A20D99D1E00C5BCFD /* LaunchScreen.storyboard */,
 				91C67A1D20D99D1E00C5BCFD /* Info.plist */,
@@ -273,6 +296,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9152311C20DAE2B1008BC59D /* PasswordCellChild.xib in Resources */,
+				9152311920DACA1E008BC59D /* PasswordCell.xib in Resources */,
 				91C67A1C20D99D1E00C5BCFD /* LaunchScreen.storyboard in Resources */,
 				91C67A1920D99D1E00C5BCFD /* Assets.xcassets in Resources */,
 				91C67A1720D99D1C00C5BCFD /* Main.storyboard in Resources */,
@@ -375,8 +400,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9152311720DACA05008BC59D /* PasswordCell.swift in Sources */,
 				91C67A1420D99D1C00C5BCFD /* BrowserViewController.swift in Sources */,
 				91C67A1220D99D1C00C5BCFD /* AppDelegate.swift in Sources */,
+				917C0A0820DAB8FB00E5009F /* SettingsViewController.swift in Sources */,
+				9152311E20DAE2D0008BC59D /* PasswordCellChild.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

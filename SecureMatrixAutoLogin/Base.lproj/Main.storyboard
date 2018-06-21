@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="3aa-gX-hQs">
             <objects>
-                <viewController id="JMV-3B-QLY" sceneMemberID="viewController">
+                <viewController id="JMV-3B-QLY" customClass="SettingsViewController" customModule="SecureMatrixAutoLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wFY-jr-59i">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,32 +26,67 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="me5-bE-J26">
-                                <rect key="frame" x="103" y="181" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g3E-Qx-u92">
-                                <rect key="frame" x="16" y="73" width="343" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g3E-Qx-u92" customClass="MadokaTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="16" y="73" width="343" height="60"/>
+                                <color key="tintColor" red="0.72941176470000002" green="0.40784313729999999" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="NLu-yK-wYB"/>
+                                </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.72941176470000002" green="0.40784313729999999" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RTA-wh-LP6">
+                                <rect key="frame" x="8" y="149" width="359" height="29"/>
+                                <segments>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                </segments>
+                                <color key="tintColor" red="0.72941176470000002" green="0.40784313729999999" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="G2I-dy-iFA">
+                                <rect key="frame" x="8" y="187" width="359" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="J8j-hy-JBG"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="tQE-qI-z55" firstAttribute="trailing" secondItem="0eJ-F0-yo4" secondAttribute="trailing" id="36I-h3-Ik5"/>
+                            <constraint firstItem="RTA-wh-LP6" firstAttribute="leading" secondItem="0eJ-F0-yo4" secondAttribute="leading" constant="8" id="ACA-pN-IBq"/>
+                            <constraint firstItem="0eJ-F0-yo4" firstAttribute="trailing" secondItem="G2I-dy-iFA" secondAttribute="trailing" constant="8" id="KNd-or-2V6"/>
                             <constraint firstItem="tQE-qI-z55" firstAttribute="leading" secondItem="0eJ-F0-yo4" secondAttribute="leading" id="KbD-ef-spF"/>
+                            <constraint firstItem="G2I-dy-iFA" firstAttribute="leading" secondItem="0eJ-F0-yo4" secondAttribute="leading" constant="8" id="QE5-N4-Ou4"/>
+                            <constraint firstItem="0eJ-F0-yo4" firstAttribute="trailing" secondItem="RTA-wh-LP6" secondAttribute="trailing" constant="8" id="Vzb-P2-Ql8"/>
+                            <constraint firstItem="g3E-Qx-u92" firstAttribute="top" secondItem="tQE-qI-z55" secondAttribute="bottom" constant="8" id="d2h-AK-Jy9"/>
+                            <constraint firstItem="RTA-wh-LP6" firstAttribute="top" secondItem="g3E-Qx-u92" secondAttribute="bottom" constant="16" id="dcY-hX-kZQ"/>
                             <constraint firstItem="tQE-qI-z55" firstAttribute="top" secondItem="0eJ-F0-yo4" secondAttribute="top" id="nmg-e8-vhu"/>
+                            <constraint firstItem="0eJ-F0-yo4" firstAttribute="trailing" secondItem="g3E-Qx-u92" secondAttribute="trailing" constant="16" id="oUk-s5-Uos"/>
+                            <constraint firstItem="G2I-dy-iFA" firstAttribute="top" secondItem="RTA-wh-LP6" secondAttribute="bottom" constant="10" id="oZY-kK-pHM"/>
+                            <constraint firstItem="g3E-Qx-u92" firstAttribute="leading" secondItem="0eJ-F0-yo4" secondAttribute="leading" constant="16" id="z7k-cV-jvC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0eJ-F0-yo4"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="more" id="ss0-0X-P7i"/>
+                    <connections>
+                        <outlet property="passwordParent" destination="G2I-dy-iFA" id="6aU-my-NxA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fdP-92-dU1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1279.2" y="461.91904047976016"/>
+            <point key="canvasLocation" x="1277.5999999999999" y="593.25337331334333"/>
         </scene>
         <!--Browser-->
         <scene sceneID="s73-Yd-eSx">
