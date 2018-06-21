@@ -35,6 +35,9 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
         let lastPasswordCellRect = passwordCells.last?.frame
         passwordParent.contentSize = CGSize(width: ((lastPasswordCellRect?.width)! + 10) * CGFloat(passwordCells.count),height: (lastPasswordCellRect?.height)!)
         
+        passwordType.text = UserData.getPassword()
+        debugPrint(UserData.getPassword())
+        
         let selectIndex = UserData.getSelectStatus()
         selectStatus.selectedSegmentIndex = selectIndex
         statusChange(selectIndex)

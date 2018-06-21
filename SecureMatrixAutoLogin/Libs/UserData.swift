@@ -15,7 +15,7 @@ class UserData {
     
     static func getPassword() -> String {
         let password = UserDefaults.standard.string(forKey: "PASSWORD")
-        if let _password = password{
+        if let _password = password {
             return _password
         }else{
             return ""
